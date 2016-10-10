@@ -1,0 +1,62 @@
+body{
+	overflow: hidden;
+}
+#background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+svg{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#bus{
+	position: absolute;
+	animation: movel 25s linear infinite;
+}
+@keyframes movel{
+	0%{
+		transform: translate3d(-150px,0,0);
+	}
+
+	70%,100%{
+		transform: translate3d(105vw,0,0);
+	}
+}
+.close-window{
+	animation: lights-off 5s linear;
+	animation-fill-mode:forwards;
+}
+@keyframes lights-off{
+	0%,60%{
+		fill: rgb(93,126,93);
+	}
+	61%,100%{
+		fill: rgb(77, 77, 77);
+	}
+}
+/* #open-1 .close-window{
+	animation-delaly
+} */
+#open9 .close-window{
+	animation-delay: 7s
+}
+
+#open8 .close-window{
+	animation-delay: 1.5s
+}
+
+#open6 .close-window{
+	animation-delay: 2s
+}
+
+#open5 .close-window{
+	animation-delay: 3s
+}
+
+#open3 .close-window{
+	animation-delay: 4.5s
+}
